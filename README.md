@@ -51,7 +51,7 @@ In this project, we followed a **Lead Architect & Peer Review** model to ensure 
 
 | Member Name | Professional Role | Key Contribution (Reviewer & Auditor) |
 | :--- | :--- | :--- |
-| **SHAIKH IRFAN** | **Lead Product Architect** | **Full Execution:** End-to-end Coding, System Design, PPT Creation, and Logic Implementation. |
+| **SHAIKH MOHD IRFAN MOHD WAKIL** | **Lead Product Architect** | **Full Execution:** End-to-end Coding, System Design, PPT Creation, and Logic Implementation. |
 | **KHAN SHOAIB** | **Documentation Auditor** | **PDF Reviewer:** Responsible for reviewing the final PPT and project documentation for clarity. |
 | **KHAN ZIDAN** | **Conceptual Reviewer** | **Idea Auditor:** Critically reviewed the 'Wallet-First' concept and market viability. |
 | **SHOAIB RAZA** | **Code Auditor** | **Quality Assurance:** Performed code reviews to ensure logic stability and debugging. |
