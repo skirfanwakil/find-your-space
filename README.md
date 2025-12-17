@@ -75,5 +75,7 @@ find-your-space/
 │   └── index.html      # Frontend UI
 └── README.md           # Project documentation
 
+## 📺 Project Demo Video
+Click the play button below to see the project in action:
 
 https://github.com/user-attachments/assets/7909cadf-2f02-4ed5-a00f-3ef836da6bdc
