@@ -1,6 +1,20 @@
 # find-your-space
 A Google-powered web MVP helping students find budget-friendly hangout spots using Flask, Pandas, and Google Sheets. 🚀
 
+---
+
+## 👥 Meet Team SIZZLERS
+**Event:** TechSprint - Leveraging The Power of AI
+
+| Name | Role | Responsibility |
+| :--- | :--- | :--- |
+| **SHAIKH IRFAN** | **Lead Architect & Developer** | Conceptualized the idea, designed the Google Ecosystem integration, and built the full Flask-Python backend. |
+| **KHAN SHOAIB** | **Communications Lead** | Crafting the project presentation (PPT) and defining the visual brand for the TechSprint pitch. |
+| **KHAN ZIDAN** | **Market Analyst** | Verified project feasibility, validated student budget data, and conducted market research. |
+| **SHOAIB RAZA** | **QA & Support** | Handled system testing, bug reporting, and maintained backups for a stable build. |
+
+---
+
 ## 📌 Problem Statement
 College students often struggle to find affordable hangout places that fit their budget. At the same time, local cafes, restaurants, and entertainment spots lack a simple platform to showcase budget-friendly offers to students.
 
