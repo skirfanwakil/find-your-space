@@ -65,6 +65,12 @@ To showcase the seamless integration of Google Workspace, here are the live comp
 5. **Display:** Matching hangout spots are displayed to the user.
 
 ---
+## 📺 Project Demo Video
+Click the play button below to see the project in action:
+
+https://github.com/user-attachments/assets/7909cadf-2f02-4ed5-a00f-3ef836da6bdc
+
+---
 
 ## 📁 Project Structure
 ```text
@@ -74,8 +80,3 @@ find-your-space/
 ├── templates/
 │   └── index.html      # Frontend UI
 └── README.md           # Project documentation
-
-## 📺 Project Demo Video
-Click the play button below to see the project in action:
-
-https://github.com/user-attachments/assets/7909cadf-2f02-4ed5-a00f-3ef836da6bdc
