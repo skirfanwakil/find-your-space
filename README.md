@@ -42,7 +42,6 @@ To showcase the seamless integration of Google Workspace, here are the live comp
 * **CSV API Endpoint:** [Live CSV Link](https://docs.google.com/spreadsheets/d/1xXJznjhzh0P2Q1CLieVPDBEW3z1Az0Xbmlr5HknBqis/export?format=csv) — *The real-time data bridge used by the Flask backend.*
 
 ---
----
 
 ## 🔄 How It Works
 1. **Submit:** Shopkeepers submit hangout details through a Google Form.
