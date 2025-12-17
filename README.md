@@ -71,6 +71,11 @@ Click the play button below to see the project in action:
 https://github.com/user-attachments/assets/7909cadf-2f02-4ed5-a00f-3ef836da6bdc
 
 ---
+📄 Project Presentation & PDF
+Detailed methodology, market research, and our vision can be found in our formal presentation:
+👉 **[View Full Project Presentation (PDF)](https://github.com/user-attachments/files/24220202/find-your-space.pdf)**
+
+---
 
 ## 📁 Project Structure
 ```text
