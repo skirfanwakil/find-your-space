@@ -1,35 +1,56 @@
 # 📍 Find Your Space - Team SIZZLERS
 
-**Find Your Space** is an automated ecosystem designed to help students discover hyper-local, budget-friendly hangout spots—such as cafes, study zones, and stalls—tailored to their specific financial capacity. By bridging the gap between budget-conscious students and local vendors, the platform ensures students find the best spots without financial stress.
+### Budget-Friendly Hangout Finder (Hackathon MVP)
+
+## Problem Statement
+College students often want to hang out but struggle to find affordable cafes, restaurants, or entertainment options within their budget. At the same time, local businesses lack a simple platform to promote budget-friendly offers to students.
+
+## Solution
+Find Your Space is a lightweight web-based MVP that helps students discover nearby hangout places based on their budget and preferred category. Shopkeepers or users can submit offers through Google Forms, which automatically updates a Google Sheet used as the project database.
+
+## Key Features
+- Budget-based hangout search
+- Category filtering (Cafe, Restaurant, Movie, Playstation)
+- Real-time updates using Google Sheets
+- Simple and accessible interface for students
+
+## Tech Stack
+- Backend: Python (Flask)
+- Data Handling: Pandas
+- Frontend: HTML, CSS
+- Database: Google Sheets
+- Data Collection: Google Forms
+
+## How It Works
+1. Offers are submitted through a Google Form.
+2. Data is stored in a Google Sheet.
+3. The Flask backend reads the Sheet as a CSV.
+4. Students enter budget and category.
+5. Matching hangouts are displayed instantly.
+
+---
+## MVP Scope
+This project is a Minimum Viable Product built for hackathon submission. It focuses on solving a real student problem with a simple, practical, and scalable approach using Google technologies.
+
+## Future Scope
+- Location-based filtering
+- Ratings and reviews
+- Better UI and mobile support
+
+## Hackathon Compliance
+- Real-world problem
+- Google Forms + Google Sheets integration
+- Working MVP with screenshots and demo video
 
 ---
 
-## 🚀 Key Features
-* **Wallet-Centric Filtering:** Users can search for spots based on an exact budget range (e.g., ₹50 - ₹200), preventing any "price anxiety."
-* **Live Crowdsourcing:** Integrated with **Google Forms**, the platform allows students and vendors to instantly "Add a Spot," which reflects in the app in real-time.
-* **Hidden Gems:** The system digitizes local vendors and "hidden" campus haunts that mainstream navigation apps like Google Maps often ignore.
-* **Zero-Cost for Vendors:** Small-scale vendors can increase their visibility and reach their target student audience without paying high commissions or requiring technical skills.
+## 🚀 How to Run Locally
+1. Clone the repo.
+2. Install requirements: `pip install -r requirements.txt`
+3. Run: `python app.py`
 
----
+----
 
-## 🛠️ Google Technologies Used
-* **Google Sheets API:** Utilized as a real-time, serverless NoSQL database to store and fetch hangout data.
-* **Google Forms:** Functions as a seamless front-end tool for data ingestion and community crowdsourcing.
-* **Python Flask:** Powers the backend logic for processing data and applying budget filters.
-* **Google Cloud Assets:** Used for managing environment variables, project documentation, and hosting simulation.
-
----
-
-## 🏗️ Technical Architecture
-The solution follows a scalable, three-layer architecture designed for cost-efficiency:
-
-
-
-1.  **Input Layer:** Students and local vendors submit hangout details via **Google Forms**.
-2.  **Processing Layer:** The **Python Flask backend** fetches live data from **Google Sheets** and applies the specific budget filtering logic.
-3.  **Output Layer:** A mobile-optimized **Web UI (HTML/CSS/JS)** displays the instant matching results to the student user.
-
----
 
 ## 📄 Project Resources & Links
 * **Live Database:** [Google Sheets Backend](https://docs.google.com/spreadsheets/d/1xXJznjhzh0P2Q1CLieVPDBEW3z1Az0Xbmlr5HknBqis/edit?usp=sharing)
