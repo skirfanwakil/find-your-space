@@ -38,7 +38,9 @@ The solution follows a scalable, three-layer architecture designed for cost-effi
 View our detailed project methodology, market research, and architecture:
 👉 **[Download/View Project PDF](./find-your-space.pdf)**
 
-* ## 📺 Project Demo
+* ## 📺 Project Demo Video
+Click the play button below to see the project in action:
+
 https://github.com/user-attachments/assets/7909cadf-2f02-4ed5-a00f-3ef836da6bdc
 ---
 
