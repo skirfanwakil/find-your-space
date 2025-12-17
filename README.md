@@ -36,7 +36,7 @@ The solution follows a scalable, three-layer architecture designed for cost-effi
 * **Data Entry Portal:** [Google Form for Vendors](https://forms.gle/LUzyVDzudVW8QhQN7)
 * ## 📄 Project Documentation
 View our detailed project methodology, market research, and architecture:
-👉 **[Download/View Project PDF](https://github.com/user-attachments/files/24220647/find-your-space.pdf))**
+👉 **[Download/View Project PDF] ((https://github.com/user-attachments/files/24220647/find-your-space.pdf))**
 
 
 * ## 📺 Project Demo Video
