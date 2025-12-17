@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Space | Budget Hangout Finder</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        .card { border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 8px; background: #f9f9f9; }
+        form { background: #eee; padding: 20px; border-radius: 8px; }
+        input, select, button { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+        button { background-color: #28a745; color: white; border: none; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #218838; }
+        h1 { color: #333; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <div style="text-align: center; margin-top: 20px;">
+    <p>Know a great budget spot?</p>
+    <a href="https://forms.gle/LUzyVDzudVW8QhQN7" target="_blank" 
+       style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
+        ➕ Add New Hangout Info
+    </a>
+</div>
+
+    <h1>📍 Find Your Space</h1>
+    <p style="text-align: center;">Find the best hangouts within your budget!</p>
+
+    <form method="POST">
+        <label>Minimum Budget (₹)</label>
+        <input type="number" name="min_budget" placeholder="e.g. 100" required>
+
+        <label>Maximum Budget (₹)</label>
+        <input type="number" name="max_budget" placeholder="e.g. 500" required>
+
+        <label>Type of Hangout</label>
+        <select name="hangout_type">
+            <option value="Cafe">Cafe</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Movie">Movie</option>
+            <option value="Playstation">Playstation</option>
+        </select>
+
+        <button type="submit">Search Hangouts</button>
+    </form>
+
+    <hr>
+
+    {% if results is not none %}
+        <h3>Results:</h3>
+        {% if results|length > 0 %}
+            {% for place in results %}
+                <div class="card">
+                    <strong>{{ place['Store Name'] }}</strong><br>
+                    💰 Budget: ₹{{ place['Min Price'] }} - ₹{{ place['Max Price'] }}<br>
+                    📍 Location: {{ place['Location'] }} ({{ place['Pincode'] }})<br>
+                    ✨ <em>{{ place['Offer description'] }}</em>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No spaces found within that budget. Try increasing your range!</p>
+        {% endif %}
+    {% endif %}
+
+</body>
+</html>
