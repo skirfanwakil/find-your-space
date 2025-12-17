@@ -5,61 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Your Space | Budget Hangout Finder</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-        .card { border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 8px; background: #f9f9f9; }
-        form { background: #eee; padding: 20px; border-radius: 8px; }
-        input, select, button { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
-        button { background-color: #28a745; color: white; border: none; cursor: pointer; font-size: 16px; }
-        button:hover { background-color: #218838; }
-        h1 { color: #333; text-align: center; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
+        .card { border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 8px; background: #f9f9f9; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        form { background: #f1f3f4; padding: 20px; border-radius: 8px; border: 1px solid #dfe1e5; }
+        input, select, button { width: 100%; padding: 12px; margin: 10px 0; box-sizing: border-box; border-radius: 5px; border: 1px solid #ccc; }
+        button { background-color: #1a73e8; color: white; border: none; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background-color: #1557b0; }
+        h1 { color: #202124; text-align: center; margin-bottom: 5px; }
+        .team-tag { text-align: center; font-weight: bold; color: #5f6368; letter-spacing: 1px; margin-bottom: 0; }
+        .event-tag { text-align: center; color: #1a73e8; font-size: 0.85em; margin-top: 0; margin-bottom: 20px; font-weight: 500; }
     </style>
 </head>
 <body>
 
-    <div style="text-align: center; margin-top: 20px;">
-    <p>Know a great budget spot?</p>
-    <a href="https://forms.gle/LUzyVDzudVW8QhQN7" target="_blank" 
-       style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
-        ➕ Add New Hangout Info
-    </a>
-</div>
+    <p class="team-tag">Presented by Team <strong>SIZZLERS</strong></p>
+    <p class="event-tag">TechSprint - Leveraging The Power of AI</p>
+
+    <div style="text-align: center; margin-bottom: 30px; border: 2px solid #1a73e8; padding: 15px; border-radius: 10px; background-color: #e8f0fe;">
+        <p style="margin-top: 0;"><strong>Are you a Shopkeeper?</strong></p>
+        <a href="https://forms.gle/LUzyVDzudVW8QhQN7" target="_blank" 
+           style="background-color: #1a73e8; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">
+           ➕ List Your Budget Spot
+        </a>
+    </div>
 
     <h1>📍 Find Your Space</h1>
-    <p style="text-align: center;">Find the best hangouts within your budget!</p>
+    <p style="text-align: center; color: #70757a;">Discover student-friendly hangouts within your budget!</p>
 
     <form method="POST">
-        <label>Minimum Budget (₹)</label>
+        <label><b>Minimum Budget (₹)</b></label>
         <input type="number" name="min_budget" placeholder="e.g. 100" required>
 
-        <label>Maximum Budget (₹)</label>
+        <label><b>Maximum Budget (₹)</b></label>
         <input type="number" name="max_budget" placeholder="e.g. 500" required>
 
-        <label>Type of Hangout</label>
+        <label><b>Category</b></label>
         <select name="hangout_type">
-            <option value="Cafe">Cafe</option>
-            <option value="Restaurant">Restaurant</option>
-            <option value="Movie">Movie</option>
-            <option value="Playstation">Playstation</option>
+            <option value="Cafe">☕ Cafe</option>
+            <option value="Restaurant">🍽️ Restaurant</option>
+            <option value="Movie">🎬 Movie</option>
+            <option value="Playstation">🎮 Playstation</option>
         </select>
 
-        <button type="submit">Search Hangouts</button>
+        <button type="submit">🔍 Search Hangouts</button>
     </form>
 
-    <hr>
+    <br>
 
     {% if results is not none %}
-        <h3>Results:</h3>
+        <h3 style="border-bottom: 2px solid #f1f3f4; padding-bottom: 10px;">Available Spaces:</h3>
         {% if results|length > 0 %}
             {% for place in results %}
                 <div class="card">
-                    <strong>{{ place['Store Name'] }}</strong><br>
-                    💰 Budget: ₹{{ place['Min Price'] }} - ₹{{ place['Max Price'] }}<br>
-                    📍 Location: {{ place['Location'] }} ({{ place['Pincode'] }})<br>
-                    ✨ <em>{{ place['Offer description'] }}</em>
+                    <strong style="font-size: 1.2em; color: #1a73e8;">{{ place['Store Name'] }}</strong><br>
+                    <span style="background: #e6f4ea; color: #137333; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; font-weight: bold;">
+                        💰 ₹{{ place['Min Price'] }} - ₹{{ place['Max Price'] }}
+                    </span><br>
+                    <p style="margin: 10px 0 5px 0;">📍 <b>Location:</b> {{ place['Location'] }} ({{ place['Pincode'] }})</p>
+                    <p style="margin: 0; color: #5f6368;">✨ <em>{{ place['Offer description'] }}</em></p>
                 </div>
             {% endfor %}
         {% else %}
-            <p>No spaces found within that budget. Try increasing your range!</p>
+            <div style="text-align: center; padding: 20px; color: #70757a;">
+                <p>😔 No spaces found in this range. <br>Try a different budget or category!</p>
+            </div>
         {% endif %}
     {% endif %}
 
