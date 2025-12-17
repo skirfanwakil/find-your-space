@@ -32,7 +32,16 @@ College students often struggle to find affordable hangout places that fit their
 * **Data Handling:** Pandas
 * **Database:** Google Sheets
 * **Google Tools Used:** Google Forms, Google Sheets
+---
 
+## 🔗 Project Links & Resources
+To showcase the seamless integration of Google Workspace, here are the live components of the project:
+
+* **Data Entry Portal:** [Google Form](https://forms.gle/LUzyVDzudVW8QhQN7) — *Used by shopkeepers to submit new offers.*
+* **Live Database:** [Google Sheets](https://docs.google.com/spreadsheets/d/1xXJznjhzh0P2Q1CLieVPDBEW3z1Az0Xbmlr5HknBqis/edit?usp=sharing) — *Where all hangout data is stored and managed.*
+* **CSV API Endpoint:** [Live CSV Link](https://docs.google.com/spreadsheets/d/1xXJznjhzh0P2Q1CLieVPDBEW3z1Az0Xbmlr5HknBqis/export?format=csv) — *The real-time data bridge used by the Flask backend.*
+
+---
 ---
 
 ## 🔄 How It Works
