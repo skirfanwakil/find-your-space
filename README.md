@@ -45,9 +45,15 @@ https://github.com/user-attachments/assets/7909cadf-2f02-4ed5-a00f-3ef836da6bdc
 
 ---
 
-## 👥 Meet Team SIZZLERS
-| Name | Role |
-| :--- | :--- |
-| **SHAIKH IRFAN** | **Lead Developer** (Backend, Logic & API Integration) |
+## 👥 Team SIZZLERS (Roles & Contributions)
+
+In this project, we followed a **Lead Architect & Peer Review** model to ensure high-quality execution:
+
+| Member Name | Professional Role | Key Contribution (Reviewer & Auditor) |
+| :--- | :--- | :--- |
+| **SHAIKH IRFAN** | **Lead Product Architect** | **Full Execution:** End-to-end Coding, System Design, PPT Creation, and Logic Implementation. |
+| **KHAN SHOAIB** | **Documentation Auditor** | **PDF Reviewer:** Responsible for reviewing the final PPT and project documentation for clarity. |
+| **KHAN ZIDAN** | **Conceptual Reviewer** | **Idea Auditor:** Critically reviewed the 'Wallet-First' concept and market viability. |
+| **SHOAIB RAZA** | **Code Auditor** | **Quality Assurance:** Performed code reviews to ensure logic stability and debugging. |
 ---
 *Developed for Google Developer Group On Campus: TechSprint 2025*
