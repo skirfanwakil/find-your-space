@@ -79,3 +79,14 @@ In this project, we followed a **Lead Architect & Peer Review** model to ensure 
 | **SHOAIB RAZA** | **Code Auditor** | **Quality Assurance:** Performed code reviews to ensure logic stability and debugging. |
 ---
 *Developed for Google Developer Group On Campus: TechSprint 2025*
+
+---
+
+## 📁 Project Structure
+```text
+find-your-space/
+├── app.py              # Flask engine & Google Sheet API integration
+├── requirements.txt    # Dependencies (Flask, Pandas)
+├── templates/
+│   └── index.html      # Responsive UI
+└── README.md           # Documentation for Google Hackathon
